@@ -1,5 +1,5 @@
 {
-  "name": "checklist-mastor",
+  "name": "server-mastor",
   "version": "1.0.0",
   "description": "vuejs, node js",
   "main": "babel.config.js",
@@ -15,19 +15,20 @@
     "nodemon": "^2.0.2"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "node server/index.js",
     "start": "node server/index.js",
     "dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frankenstyll/checklist-mastor.git"
+    "url": "git+https://github.com/frankenstyll/server-mastor.git"
+   
   },
   "author": "kampon.non",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frankenstyll/checklist-mastor/issues"
+    "url": "https://github.com/frankenstyll/server-mastor/issues"
   },
-  "homepage": "https://github.com/frankenstyll/checklist-mastor#readme"
+  "homepage": "https://github.com/frankenstyll/server-mastor/issues#readme"
 }

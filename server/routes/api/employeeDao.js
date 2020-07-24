@@ -15,12 +15,14 @@ const client = new Client({
 client.connect();
 
 router.get("/searchAllEmployee", async (req, res) => {
+    console.log('searchAllEmployee');
     var query = await queryEmployee();
     res.send(query.rows);
 });
 
 //function db
 async function queryEmployee(){
+    console.log('queryEmployee');
     let query = "SELECT * from employee";
     return new Promise((resolve, reject) => {
         client.query(query, function(err, results) {
@@ -33,6 +35,7 @@ async function queryEmployee(){
 }
 
 async function queryById(id){
+    console.log('queryById');
     let query = "SELECT * from employee where  employee_id = " + id;
     return new Promise((resolve, reject) => {
         client.query(query, function(err, results) {
